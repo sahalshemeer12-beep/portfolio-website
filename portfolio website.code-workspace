@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../ezgif-4157dbe4b1ad22e1-jpg"
+		}
+	],
+	"settings": {
+		"powershell.cwd": "portfolio website"
+	}
+}
