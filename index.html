@@ -1788,8 +1788,8 @@
         ctx.fillStyle = '#000000';
         ctx.fillRect(0, 0, cw, ch);
         ctx.filter = 'brightness(60%)';
-        ctx.filter = 'none';
         ctx.drawImage(img, offsetX, offsetY, drawW, drawH);
+        ctx.filter = 'none';
         if (frameNum) {
           frameNum.textContent = String(index + 1).padStart(3, '0');
         }
