@@ -1192,17 +1192,39 @@
         display: none;
       }
     }
+
+    @media (max-width:968px) {
+      #intro-video-desktop {
+        display: none;
+      }
+    }
+
+    @media (min-width:969px) {
+      #intro-video-mobile {
+        display: none;
+      }
+    }
   </style>
 </head>
 
 <body>
-  <video id="intro-video" src="IMG_4278.MOV" autoplay muted playsinline
+  <video id="intro-video-desktop" src="IMG_4278.MOV" autoplay muted playsinline
+    style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 9999;"></video>
+  <video id="intro-video-mobile" src="IMG_4279.MOV" autoplay muted playsinline
     style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 9999;"></video>
   <script>
-    const video = document.getElementById('intro-video')
-    video.addEventListener('ended', () => {
-      video.style.display = 'none';
-    });
+    const desktopVideo = document.getElementById('intro-video-desktop');
+    const mobileVideo = document.getElementById('intro-video-mobile');
+    if (desktopVideo) {
+      desktopVideo.addEventListener('ended', () => {
+        desktopVideo.style.display = 'none';
+      });
+    }
+    if (mobileVideo) {
+      mobileVideo.addEventListener('ended', () => {
+        mobileVideo.style.display = 'none';
+      });
+    }
   </script>
   <!-- SVG Hardware Sharpening Filter -->
   <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" aria-hidden="true">
