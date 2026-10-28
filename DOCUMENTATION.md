@@ -6,7 +6,7 @@ This document contains full instructions and details for running, accessing, and
 
 ## 1. Project Overview
 
-- **Project Name:** Semaan — Creative Director & Designer Portfolio
+- **Project Name:** SAHAL — Creative Director & Designer Portfolio
 - **Main Files:**
   - `index.html`: The main web application with high-performance canvas frame animation and dark-mode styling.
   - `ezgif-frame-001.jpg` to `ezgif-frame-240.jpg`: 240 sequential image frames used for the scroll/interactive animation.
